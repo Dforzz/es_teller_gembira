@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Es Teler Gembira - Segarnya Bikin Bahagia!</title>
+    <title>Es Teler Gembira - Segarnya Bikin Gembira!</title>
     
     <!-- Meta SEO -->
     <meta name="description" content="Es Teler Gembira hadir dengan rasa premium, creamy, dan topping melimpah. Cocok untuk semua usia dengan harga bersahabat.">
