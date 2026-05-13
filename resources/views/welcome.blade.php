@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Es Teler Gembira - Segarnya Bikin Gembira!</title>
+    <title>Es Teler Gembira</title>
     
     <!-- Meta SEO -->
     <meta name="description" content="Es Teler Gembira hadir dengan rasa premium, creamy, dan topping melimpah. Cocok untuk semua usia dengan harga bersahabat.">
@@ -124,7 +124,7 @@
                     </div>
                     <h1 class="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-6 text-dark">
                         Segarnya Bikin <br/>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-pink-jelly">Bahagia!</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-pink-jelly">Gembira!</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                         Nikmati perpaduan alpukat, nangka, kelapa, jelly, susu creamy dan topping melimpah dengan harga ramah kantong.
