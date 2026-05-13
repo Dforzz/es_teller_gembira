@@ -130,11 +130,8 @@
                         Nikmati perpaduan alpukat, nangka, kelapa, jelly, susu creamy dan topping melimpah dengan harga ramah kantong.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="{{ url('/pesan') }}" class="group relative px-8 py-4 bg-dark text-white font-semibold rounded-full overflow-hidden shadow-2xl shadow-dark/30 hover:-translate-y-1 transition-all">
-                            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-primary via-secondary to-pink-jelly opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            <span class="relative flex items-center justify-center gap-2 group-hover:text-white">
-                                Pesan Sekarang</i>
-                            </span>
+                        <a href="{{ url('/pesan') }}" class="px-8 py-4 bg-primary hover:bg-primary-hover text-dark font-semibold rounded-full shadow-lg shadow-primary/30 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
+                            Pesan Sekarang
                         </a>
                         <a href="#menu" class="px-8 py-4 bg-white/80 backdrop-blur text-dark font-semibold rounded-full border border-gray-200 hover:bg-white hover:shadow-lg transition-all flex items-center justify-center gap-2">
                             Lihat Menu <i class="fa-solid fa-bowl-food text-primary"></i>
