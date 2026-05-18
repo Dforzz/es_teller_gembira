@@ -1,58 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <div style="background-color: #F5C400; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 50px;">
+    🍧
+  </div>
+  <h1 align="center">Es Teler Gembira</h1>
+  <p align="center">
+    <strong>Sistem Pemesanan Cerdas & Segar untuk Es Teler Favorit Anda!</strong>
+  </p>
+</div>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 🌟 Tentang Proyek
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Es Teler Gembira** adalah aplikasi web pemesanan makanan dan minuman (berbasis Laravel) yang dirancang untuk memudahkan pelanggan setia memesan Es Teler kesukaan mereka. Aplikasi ini menyediakan pengalaman berbelanja yang interaktif, terintegrasi dengan WhatsApp untuk pemesanan cepat, serta dilengkapi sistem manajemen order (Dashboard Admin) yang komprehensif.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🧑‍💻 Untuk Pelanggan (User):
+- **E-Menu & Keranjang Belanja**: Tampilan menu interaktif dan keranjang belanja dinamis secara real-time.
+- **Checkout Cepat (WhatsApp)**: Kemudahan finalisasi pesanan yang langsung terhubung ke WhatsApp penjual.
+- **Integrasi Payment Gateway**: Dukungan pembayaran otomatis (seperti Midtrans) dengan status yang tersinkronisasi.
+- **Dashboard Pelanggan**: Pantau riwayat pesanan, status pembayaran, dan kelola profil akun.
+- **Desain Responsif**: Tampilan UI yang cantik dan tetap rapi baik di Desktop maupun *Smartphone*.
 
-## Learning Laravel
+### 🔐 Untuk Administrator (Admin):
+- **Manajemen Pesanan Terpusat**: Pantau, verifikasi, dan kelola seluruh pesanan masuk dengan status yang jelas.
+- **Sistem Keamanan Data (Soft Delete)**: Riwayat transaksi aman; jika *user* menyembunyikan pesanan, data aslinya tetap aman untuk rekap admin.
+- **Manajemen Menu Lengkap (CRUD)**: Tambah, edit gambar, sesuaikan harga, dan hapus menu dengan mudah.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🚀 Teknologi yang Digunakan
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Aplikasi ini dibangun menggunakan *stack* teknologi modern untuk memastikan performa dan pengalaman pengguna yang maksimal:
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- **Backend Framework**: [Laravel 11+](https://laravel.com/) (PHP)
+- **Frontend & Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & Vanilla CSS
+- **Interaktivitas UI**: [Alpine.js](https://alpinejs.dev/)
+- **Ikon**: [FontAwesome 6](https://fontawesome.com/)
+- **Payment Gateway**: Midtrans API
 
-## Agentic Development
+## 🛠️ Panduan Instalasi Lokal
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Ingin mengembangkan atau menjalankan aplikasi ini di komputer Anda? Ikuti langkah-langkah berikut:
 
-```bash
-composer require laravel/boost --dev
+1. **Clone Repository**
+   ```bash
+   git clone <url-repository-anda>
+   cd es_teller_gembira
+   ```
 
-php artisan boost:install
-```
+2. **Install Dependensi (PHP & Node.js)**
+   ```bash
+   composer install
+   npm install
+   ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+3. **Konfigurasi Environment**
+   Salin file `.env.example` menjadi `.env`, lalu atur konfigurasi *database* (misalnya MySQL atau SQLite) dan kredensial pihak ketiga.
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## Contributing
+4. **Migrasi & Seeding Database**
+   Siapkan struktur tabel beserta data awal (admin/menu *dummy*).
+   ```bash
+   php artisan migrate --seed
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. **Jalankan Server Pengembangan**
+   Buka dua tab terminal dan jalankan perintah berikut secara bersamaan:
+   ```bash
+   # Terminal 1 (Menjalankan server PHP Laravel)
+   php artisan serve
 
-## Code of Conduct
+   # Terminal 2 (Menjalankan Vite untuk mem-build Tailwind/Asset)
+   npm run dev
+   ```
+   Aplikasi sekarang dapat diakses melalui browser pada `http://localhost:8000`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+<div align="center">
+  Dibuat untuk memenuhi Tugas Mata Kuliah Pemrograman Web (Tubes PWEB) 🚀🍧
+</div>
