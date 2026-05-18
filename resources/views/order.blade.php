@@ -111,7 +111,9 @@
 
                     <!-- Empty state -->
                     <div x-show="cart.length === 0" class="text-center py-10 px-6" x-cloak>
-                        <div class="text-5xl mb-3">🧋</div>
+                        <div class="text-5xl mb-3 text-gray-300">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
                         <p class="text-sm font-semibold text-dark mb-1">Keranjang kosong</p>
                         <p class="text-xs text-gray-400">Pilih menu dan tambahkan ke sini!</p>
                     </div>
@@ -220,7 +222,9 @@
 
             <!-- Empty state -->
             <div x-show="cart.length === 0" class="flex-1 flex flex-col items-center justify-center py-12 px-8 text-center">
-                <div class="text-5xl mb-4">🧋</div>
+                <div class="text-5xl mb-4 text-gray-300">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
                 <p class="font-semibold text-dark mb-1">Keranjang masih kosong</p>
                 <p class="text-xs text-gray-400 mb-6">Yuk pilih menu dulu!</p>
                 <button @click="mobileCartOpen = false" class="bg-primary text-dark font-bold text-sm px-6 py-2.5 rounded-full">Lihat Menu</button>
