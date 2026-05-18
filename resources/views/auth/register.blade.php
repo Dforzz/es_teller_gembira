@@ -35,7 +35,7 @@
             </div>
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Nomor WhatsApp</label>
-                <input type="text" name="phone" value="{{ old('phone') }}" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#F5C400]" placeholder="08xxxxxxxxxx">
+                <input type="text" name="phone" value="{{ old('phone') }}" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#F5C400]" placeholder="08xxxxxxxxxx">
             </div>
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
